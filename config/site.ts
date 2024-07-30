@@ -1,7 +1,7 @@
 export const siteConfig = {
     name: "Heard Chef!",
     description: "IDK Man",
-    routes: [
+    navbarItems: [
         {
             label: "Home",
             href: "/",
