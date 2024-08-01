@@ -15,4 +15,18 @@ export const siteConfig = {
             href: "/about",
         },
     ],
+    navbarMenuItems: [
+        {
+            label: "HOME",
+            href: "/",
+        },
+        {
+            label: "HELP",
+            href: "/help",
+        },
+        {
+            label: "ABOUT",
+            href: "/about",
+        },
+    ],
 };

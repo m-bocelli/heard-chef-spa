@@ -14,6 +14,7 @@ import Image from "next/image";
 import logo from "@/public/logo.png";
 import { fontMono } from "@/config/fonts";
 import NavbarLink from "./navbarLink";
+import NavbarMenuLink from "./navbarMenuLink";
 
 export default function Nav() {
     return (
@@ -23,6 +24,7 @@ export default function Nav() {
                 <NavbarBrand className="gap-3 max-w-fit">
                     <Link className="flex items-center gap-1" href="/">
                         <Image
+                            priority
                             src={logo}
                             alt="Heard, Chef! logo"
                             width={80}
@@ -48,11 +50,13 @@ export default function Nav() {
 
             <NavbarMenu className="mt-12">
                 <div className="mx-4 mt-2 flex flex-col gap-3">
-                    <NavbarMenuItem>
-                        <Link className="w-full" href="/" size="lg">
-                            Test 3
-                        </Link>
-                    </NavbarMenuItem>
+                    {siteConfig.navbarMenuItems.map((item, idx) => (
+                        <NavbarMenuLink
+                            href={item.href}
+                            label={item.label}
+                            key={idx}
+                        />
+                    ))}
                 </div>
             </NavbarMenu>
         </Navbar>
