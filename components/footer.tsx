@@ -2,7 +2,7 @@ import { Link } from "@nextui-org/react";
 
 export default function Footer() {
     return (
-        <footer className="w-full flex items-center justify-center py-3">
+        <footer className="w-full flex items-center justify-center py-3 text-center">
             <Link
                 isExternal
                 className="flex items-center gap-1 text-current"

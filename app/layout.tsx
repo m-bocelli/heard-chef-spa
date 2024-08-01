@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "@/styles/globals.css";
 import { Providers } from "./providers";
 import Footer from "@/components/footer";
-import { fontMono } from "@/config/fonts";
+import Nav from "@/components/navbar";
 
 export const metadata: Metadata = {
     title: "Heard Chef!",
@@ -20,7 +20,7 @@ export default function RootLayout({
             <body className="min-h-screen bg-background font-mono antialiased">
                 <Providers>
                     <div className="relative flex flex-col h-screen">
-                        <nav></nav>
+                        <Nav />
                         <main className="container mx-auto max-w-7xl pt-16 px-6 flex-grow">
                             {children}
                         </main>
