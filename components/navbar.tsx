@@ -1,18 +1,13 @@
 import { siteConfig } from "@/config/site";
 import {
-    Button,
     Link,
     Navbar,
     NavbarBrand,
     NavbarContent,
-    NavbarItem,
     NavbarMenu,
-    NavbarMenuItem,
     NavbarMenuToggle,
 } from "@nextui-org/react";
 import Image from "next/image";
-import logo from "@/public/logo.png";
-import { fontMono } from "@/config/fonts";
 import NavbarLink from "./navbarLink";
 import NavbarMenuLink from "./navbarMenuLink";
 
@@ -25,9 +20,10 @@ export default function Nav() {
                     <Link className="flex items-center gap-1" href="/">
                         <Image
                             priority
-                            src={logo}
+                            src="/logo.PNG"
                             alt="Heard, Chef! logo"
                             width={80}
+                            height={0}
                         ></Image>
                     </Link>
                 </NavbarBrand>
