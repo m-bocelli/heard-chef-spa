@@ -10,33 +10,44 @@ import {
     NavbarMenuItem,
     NavbarMenuToggle,
 } from "@nextui-org/react";
+import Image from "next/image";
+import logo from "@/public/logo.png";
+import { fontMono } from "@/config/fonts";
+import NavbarLink from "./navbarLink";
 
 export default function Nav() {
     return (
-        <Navbar shouldHideOnScroll className="shadow-md shadow-violet-100">
+        <Navbar shouldHideOnScroll className="h-24">
             <NavbarContent className="basis-1/5 sm:basis-full" justify="start">
                 <NavbarMenuToggle className="sm:hidden" />
                 <NavbarBrand className="gap-3 max-w-fit">
-                    <p>HEARD CHEF!</p>
+                    <Link className="flex items-center gap-1" href="/">
+                        <Image
+                            src={logo}
+                            alt="Heard, Chef! logo"
+                            width={80}
+                        ></Image>
+                    </Link>
                 </NavbarBrand>
-                <ul className="hidden sm:flex gap-4 justify-start ml-2">
-                    {siteConfig.navbarItems.map((item, idx) => (
-                        <NavbarItem key={idx}>
-                            <Link href={item.href}>{item.label}</Link>
-                        </NavbarItem>
-                    ))}
-                </ul>
             </NavbarContent>
 
             <NavbarContent
                 className="hidden sm:flex basis-1/5 sm:basis-full"
                 justify="end"
             >
-                <Button>Login</Button>
+                <ul className="hidden sm:flex gap-8 justify-start ml-2">
+                    {siteConfig.navbarItems.map((item, idx) => (
+                        <NavbarLink
+                            href={item.href}
+                            label={item.label}
+                            key={idx}
+                        />
+                    ))}
+                </ul>
             </NavbarContent>
 
-            <NavbarMenu>
-                <div className="mx-4 mt-2 flex flex-col gap-2">
+            <NavbarMenu className="mt-12">
+                <div className="mx-4 mt-2 flex flex-col gap-3">
                     <NavbarMenuItem>
                         <Link className="w-full" href="/" size="lg">
                             Test 3

@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import "@/styles/globals.css";
 import { Providers } from "./providers";
 import Footer from "@/components/footer";
-import { fontMono } from "@/config/fonts";
 import Nav from "@/components/navbar";
 
 export const metadata: Metadata = {

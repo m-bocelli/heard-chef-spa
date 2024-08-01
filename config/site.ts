@@ -3,8 +3,16 @@ export const siteConfig = {
     description: "IDK Man",
     navbarItems: [
         {
-            label: "Home",
+            label: "HOME",
             href: "/",
+        },
+        {
+            label: "HELP",
+            href: "/help",
+        },
+        {
+            label: "ABOUT",
+            href: "/about",
         },
     ],
 };
