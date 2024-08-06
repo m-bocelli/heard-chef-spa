@@ -13,7 +13,7 @@ import NavbarMenuLink from "./navbarMenuLink";
 
 export default function Nav() {
     return (
-        <Navbar shouldHideOnScroll className="h-24">
+        <Navbar shouldHideOnScroll maxWidth="xl">
             <NavbarContent className="basis-1/5 sm:basis-full" justify="start">
                 <NavbarMenuToggle className="sm:hidden" />
                 <NavbarBrand className="gap-3 max-w-fit">
@@ -22,8 +22,8 @@ export default function Nav() {
                             priority
                             src="/logo.PNG"
                             alt="Heard, Chef! logo"
-                            width={80}
-                            height={0}
+                            width={60}
+                            height={120}
                         ></Image>
                     </Link>
                 </NavbarBrand>
