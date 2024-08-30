@@ -9,6 +9,8 @@ export default {
   theme: {
     extend: {},
     colors: {
+      transparent: "transparent",
+      white: "#fffafa",
       purple: "#721B65",
       orange: "#E47653",
       yellow: "#FFC95C",
