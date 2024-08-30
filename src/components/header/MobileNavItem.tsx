@@ -8,7 +8,8 @@ interface MobileNavItemProps {
 export default function MobileNavItem({ name, onPress }: MobileNavItemProps) {
   return (
     <Button
-      className="font-bold bg-transparent text-large text-purple"
+      disableRipple
+      className="font-bold bg-transparent text-large text-purple transition-colors duration-400 ease-in-out hover:text-orange"
       onClick={onPress}
     >
       {name}
