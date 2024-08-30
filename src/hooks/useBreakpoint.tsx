@@ -23,6 +23,9 @@ export default function useBreakpoint() {
       }
     };
 
+    // First call on mount to get initial value
+    handleWindowChange();
+
     window.addEventListener("resize", handleWindowChange);
 
     return () => {
