@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Button } from "@nextui-org/react";
 import { useState } from "react";
 import { cn } from "@nextui-org/react";
-import { NAV_CONTENT } from "../../utils/Constants";
+import { NAV_CONTENT } from "../../../utils/Constants";
 import MobileNavItem from "./MobileNavItem";
 
 export default function MobileNav() {
@@ -28,7 +28,7 @@ export default function MobileNav() {
       <nav
         hidden
         className={cn(
-          "flex flex-col items-end absolute p-6 gap-6 -top-28 transition-all -z-10 opacity-0 right-0",
+          "flex flex-col items-end absolute p-6 gap-6 -top-28 transition-all opacity-0 right-0 bg-white z-0 shadow-md",
           {
             "top-20": isMenuOpen,
             "md:top-32": isMenuOpen,
