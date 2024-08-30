@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import tailwindConfig from "../../tailwind.config";
 
 export enum Breakpoint {
   sm = 1,
@@ -9,12 +10,13 @@ export enum Breakpoint {
 // Inspired by Mike Spadafora
 export default function useBreakpoint() {
   const [breakpoint, setBreakpoint] = useState(Breakpoint.sm);
-
   useEffect(() => {
     const handleWindowChange = () => {
-      if (window.innerWidth >= 1024) {
+      if (window.innerWidth >= parseInt(tailwindConfig.theme.screens.lg)) {
         setBreakpoint(Breakpoint.lg);
-      } else if (window.innerWidth >= 768) {
+      } else if (
+        window.innerWidth >= parseInt(tailwindConfig.theme.screens.md)
+      ) {
         setBreakpoint(Breakpoint.md);
       } else {
         setBreakpoint(Breakpoint.sm);

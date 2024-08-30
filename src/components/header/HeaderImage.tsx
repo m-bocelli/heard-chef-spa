@@ -4,7 +4,7 @@ export default function HeaderImage() {
   return (
     <img
       src={headerimg}
-      className="w-1/4 max-w-[128px] p-4"
+      className="w-16 md:w-28 lg:w-36 ml-8"
       draggable="false"
     />
   );

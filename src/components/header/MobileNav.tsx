@@ -28,7 +28,7 @@ export default function MobileNav() {
       <nav
         hidden
         className={cn(
-          "flex flex-col items-end absolute p-6 gap-6 debug -top-28 transition-all -z-10 opacity-0 right-0",
+          "flex flex-col items-end absolute p-6 gap-6 -top-28 transition-all -z-10 opacity-0 right-0",
           {
             "top-20": isMenuOpen,
             "md:top-32": isMenuOpen,

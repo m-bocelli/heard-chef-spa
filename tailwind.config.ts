@@ -7,6 +7,12 @@ export default {
     "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    // These are the default screens sizes, just writing them explicitly for access
+    screens: {
+      sm: "640px",
+      md: "768px",
+      lg: "1024px",
+    },
     extend: {},
     colors: {
       transparent: "transparent",
