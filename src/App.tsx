@@ -1,17 +1,21 @@
-import Header from "./components/header/Header";
+import { useEffect } from "react";
 import About from "./components/sections/About";
 import Beta from "./components/sections/Beta";
 import Contact from "./components/sections/Contact";
-import Hero from "./components/sections/Hero";
 import Roadmap from "./components/sections/Roadmap";
+import { useSection } from "./hooks/useSection";
+import Home from "./components/sections/Home";
 
 function App() {
+  const { currentSection } = useSection();
+
+  useEffect(() => {
+    console.log(currentSection);
+  }, [currentSection]);
+
   return (
     <main className="flex flex-col w-full">
-      <section className="flex flex-col h-screen debug">
-        <Header />
-        <Hero />
-      </section>
+      <Home />
       <About />
       <Roadmap />
       <Beta />

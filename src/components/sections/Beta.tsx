@@ -1,3 +1,9 @@
+import Section from "./Section";
+
 export default function Beta() {
-  return <div className="h-screen debug">Beta</div>;
+  return (
+    <Section id="beta" className="h-screen debug">
+      Beta
+    </Section>
+  );
 }

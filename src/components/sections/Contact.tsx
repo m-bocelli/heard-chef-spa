@@ -1,3 +1,9 @@
+import Section from "./Section";
+
 export default function Contact() {
-  return <div className="h-screen debug">Contact</div>;
+  return (
+    <Section id="contact" className="h-screen debug">
+      Contact
+    </Section>
+  );
 }
