@@ -1,6 +1,6 @@
 export const NAV_CONTENT = [
+  { name: "Home" },
   { name: "About" },
-  { name: "Roadmap" },
   { name: "Beta" },
   { name: "Contact" },
 ];

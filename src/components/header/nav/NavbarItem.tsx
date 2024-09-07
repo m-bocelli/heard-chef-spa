@@ -3,9 +3,10 @@ import { Button, cn } from "@nextui-org/react";
 interface NavbarItemProps {
   name: string;
   active: boolean;
+  onClick: () => void;
 }
 
-export default function NavbarItem({ name, active }: NavbarItemProps) {
+export default function NavbarItem({ name, active, onClick }: NavbarItemProps) {
   return (
     <Button
       disableRipple
@@ -15,6 +16,7 @@ export default function NavbarItem({ name, active }: NavbarItemProps) {
           "text-orange": active,
         }
       )}
+      onClick={onClick}
     >
       {name}
     </Button>

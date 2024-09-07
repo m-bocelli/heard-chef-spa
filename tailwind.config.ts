@@ -16,6 +16,7 @@ export default {
     extend: {},
     colors: {
       transparent: "transparent",
+      purewhite: "#ffffff",
       white: "#fffafa",
       purple: "#721B65",
       orange: "#E47653",
