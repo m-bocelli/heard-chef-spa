@@ -11,10 +11,10 @@ export default function About() {
     >
       <header className="mb-12">
         <h1 className="text-purple font-bold text-4xl mb-6">
-          Recipe Choosing Made Easy
+          Recipe Decisions Made Easy
         </h1>
         <h2>
-          With our growing number of partners,
+          With our growing number of partners,{" "}
           <span className="text-orange">
             <em>Heard, Chef!</em>
           </span>{" "}
