@@ -5,7 +5,7 @@ import Section from "./Section";
 export default function About() {
   return (
     <Section id="About" className="h-auto w-full flex flex-col items-center">
-      <header className="mt-6 mb-12">
+      <header className="mb-12">
         <h1 className="text-purple font-bold text-4xl mb-6">
           "What's for dinner?"
         </h1>

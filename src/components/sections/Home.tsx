@@ -4,7 +4,7 @@ import Section from "./Section";
 
 export default function Home() {
   return (
-    <Section id="Home" className="flex flex-col h-screen debug">
+    <Section id="Home" className="flex flex-col h-screen">
       <Header />
       <Hero />
     </Section>
