@@ -13,7 +13,7 @@ export default function About() {
         <h1 className="text-purple font-bold text-4xl mb-6">
           Recipe Decisions Made Easy
         </h1>
-        <h2>
+        <h2 className="text-black">
           With our growing number of partners,{" "}
           <span className="text-orange">
             <em>Heard, Chef!</em>
@@ -37,7 +37,7 @@ export default function About() {
               Form a herd with your family and/or friends
             </p>
             <Divider className="rounded-full" />
-            <p className="text-md text-yellow font-bold">
+            <p className="text-md text-black font-bold">
               Swipe on your favorite recipes
             </p>
             <Divider className="rounded-full" />
@@ -52,7 +52,7 @@ export default function About() {
               One-tap Instacart order for all the ingredients you need
             </p>
             <Divider className="rounded-full" />
-            <p className="text-md text-yellow font-bold">
+            <p className="text-md text-black font-bold">
               Free access to thousands of cultivated and user-made recipes
             </p>
             <Divider className="rounded-full" />

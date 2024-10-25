@@ -9,7 +9,7 @@ export default function Beta() {
     >
       <header className="mb-12">
         <h1 className="text-purple font-bold text-4xl mb-6">Beta Testing</h1>
-        <h2>
+        <h2 className="text-black">
           We intend to start the first iteration of
           <span className="text-orange">
             <em>Heard, Chef!</em>
@@ -17,7 +17,9 @@ export default function Beta() {
           beta testing in May, 2025.
         </h2>
         <br />
-        <h2>Just drop your email, and we'll send you an access code!</h2>
+        <h2 className="text-black">
+          Just drop your email, and we'll send you an access code!
+        </h2>
       </header>
       <div className="min-w-[300px]">
         <EmailForm />

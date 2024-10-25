@@ -45,8 +45,8 @@ export default function Team() {
                 <h2 className="font-bold border-3 border-purple rounded-xl">
                   {member.name}
                 </h2>
-                <h3 className="italic">{member.role}</h3>
-                <div>{member.desc}</div>
+                <h3 className="italic text-black">{member.role}</h3>
+                <div className="text-black">{member.desc}</div>
               </div>
             </div>
           );
