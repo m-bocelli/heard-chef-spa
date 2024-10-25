@@ -8,7 +8,7 @@ interface SectionProps {
 
 export default function Section({ id, className, children }: SectionProps) {
   return (
-    <section id={id} data-section-id className={cn(className, "p-4")}>
+    <section id={id} data-section-id className={cn(className)}>
       {children}
     </section>
   );

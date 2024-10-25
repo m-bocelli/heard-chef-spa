@@ -1,19 +1,24 @@
 import { Card, CardBody, Divider, Image } from "@nextui-org/react";
-import login from "../../assets/images/login.png";
+import herd from "../../assets/images/herd.png";
+import swiping from "../../assets/images/swiping.png";
 import Section from "./Section";
 
 export default function About() {
   return (
-    <Section id="About" className="h-auto w-full flex flex-col items-center">
+    <Section
+      id="About"
+      className="h-auto w-full flex flex-col items-center pt-24"
+    >
       <header className="mb-12">
         <h1 className="text-purple font-bold text-4xl mb-6">
-          "What's for dinner?"
+          Recipe Choosing Made Easy
         </h1>
         <h2>
+          With our growing number of partners,
           <span className="text-orange">
             <em>Heard, Chef!</em>
           </span>{" "}
-          seeks to answer the age old question.
+          is building an immense recipe base.
         </h2>
       </header>
       <main className="flex flex-col gap-6">
@@ -23,7 +28,7 @@ export default function About() {
               <Image
                 alt="Image of the app's landing page"
                 className="rounded-xl shadow-sm max-w-[200px]"
-                src={login}
+                src={herd}
               />
             </CardBody>
           </Card>
@@ -60,7 +65,7 @@ export default function About() {
               <Image
                 alt="Image of the app's landing page"
                 className="rounded-xl shadow-sm max-w-[200px]"
-                src={login}
+                src={swiping}
               />
             </CardBody>
           </Card>

@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import About from "./components/sections/About";
 import Beta from "./components/sections/Beta";
-import Contact from "./components/sections/Contact";
+import Team from "./components/sections/Team";
 import { useSection } from "./hooks/useSection";
 import Home from "./components/sections/Home";
 
@@ -13,11 +13,11 @@ function App() {
   }, [currentSection]);
 
   return (
-    <main className="flex flex-col w-full">
+    <main className="flex flex-col w-full px-2">
       <Home />
       <About />
       <Beta />
-      <Contact />
+      <Team />
     </main>
   );
 }

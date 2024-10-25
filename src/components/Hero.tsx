@@ -18,7 +18,7 @@ export default function Hero() {
       </div>
       <div className="flex-grow">
         <img
-          className="max-h-[600px] rounded-xl hidden lg:block border-purple border-[2rem]"
+          className="max-h-[600px] rounded-xl hidden lg:block shadow-purple shadow-lg"
           draggable={false}
           src={demo}
         />
