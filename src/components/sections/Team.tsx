@@ -26,7 +26,7 @@ const teamMembers = [
 
 export default function Team() {
   return (
-    <Section id="Team" className="h-screen flex flex-col justify-between debug">
+    <Section id="Team" className="h-screen flex flex-col justify-between">
       <header className="pt-24">
         <h1 className="text-purple font-bold text-4xl mb-6">The Team</h1>
       </header>
