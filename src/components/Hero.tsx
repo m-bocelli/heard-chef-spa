@@ -11,7 +11,7 @@ export default function Hero() {
             What's for dinner?
           </h1>
           <h2 className="text-xl font-semibold text-black lg:text-left max-w-[500px]">
-            The question has been asnwered, and marriages will be saved; try the
+            The question has been answered, and marriages will be saved; try the
             <span className="text-orange"> Tinder</span> for recipes!
           </h2>
         </div>
